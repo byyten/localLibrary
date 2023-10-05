@@ -9,7 +9,7 @@ const compression = require("compression");
 // Set up mongoose connection
   const mongoose = require("mongoose");
   mongoose.set("strictQuery", false);
-  // const mongoDB =  'mongodb+srv://myAtlasDBUser:myatlas-001@myatlasclusteredu.rzbvdyu.mongodb.net/test'  // mongoDB = "mongodb://localhost:27017/";
+  // const mongoDB =  'mongodb+srv://********@myatlasclusteredu.rzbvdyu.mongodb.net/test'  // mongoDB = "mongodb://localhost:27017/";
 
   const dev_db_url = 'mongodb+srv://**********@myatlasclusteredu.rzbvdyu.mongodb.net/test'  // mongoDB = "mongodb://localhost:27017/";
   const mongoDB = process.env.MONGODB_URI || dev_db_url;
