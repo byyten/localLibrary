@@ -10,9 +10,7 @@ require('debug')
 // Set up mongoose connection
   const mongoose = require("mongoose");
   mongoose.set("strictQuery", false);
-    const mongoDB = process.env.MONGODB_URI;
-
-  const dev_db_url = 'mongodb+srv://myAtlasDBUser:myatlas-001@myatlasclusteredu.rzbvdyu.mongodb.net/test'  // mongoDB = "mongodb://localhost:27017/";
+  
   const mongoDB = process.env.MONGODB_URI || dev_db_url;
 
   main().catch((err) => console.log(err));
